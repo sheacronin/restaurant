@@ -1,0 +1,23 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheacronin/restaurant.git"
+  },
+  "author": "Shea Cronin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sheacronin/restaurant/issues"
+  },
+  "homepage": "https://github.com/sheacronin/restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.22.0",
+    "webpack-cli": "^4.5.0"
+  }
+}
