@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: lightcoral;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+	letter-spacing: 1px;
+}
+
+#hero-img {
+    height: 30vh;
+    background-image: url("spag.jpg");
+    background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
