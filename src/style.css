@@ -24,7 +24,7 @@ nav ul {
 	letter-spacing: 1px;
 }
 
-#hero-img {
+.hero-img {
     height: 30vh;
     background-image: url("spag.jpg");
     background-position: center;
