@@ -31,3 +31,8 @@ nav ul {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+.menu-item {
+    background-color: lightcyan;
+    width: 100px;
+}

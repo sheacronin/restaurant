@@ -1,7 +1,23 @@
-import {appendNewElement} from './elements.js';
+import {appendNewElement} from './elements';
+import {showMenu} from './menu';
 
 // Store the HTML content div in a variable.
 const content = document.getElementById('content');
+
+// Function to switch tabs.
+function switchTab(e) {
+    console.log(e.target.textContent);
+    const tab = e.target.textContent;
+    switch (tab) {
+        case 'Menu':
+            showMenu();
+            break; 
+        case 'Home':
+            break;
+        default:
+            console.log('Something went wrong.');
+    }
+}
 
 // Append the header element and store in variable.
 const header = appendNewElement('header', content);
@@ -16,12 +32,11 @@ const nav = appendNewElement('nav', header);
 const navUl = appendNewElement('ul', nav);
 
 // Store the link names in an array.
-const links = ['Home', 'Menu', 'Delivery', 'Our Story'];
+const tabs = ['Home', 'Menu', 'Our Story', 'Contact'];
 // Apppend an li for each nav link.
-for (let i = 0; i < links.length; i++) {
-    const li = appendNewElement('li', navUl, 'nav-link');
-    const a = appendNewElement('a', li, undefined, links[i]);
-    a.href = '#';
+for (let i = 0; i < tabs.length; i++) {
+    const tab = appendNewElement('li', navUl, 'nav-link', tabs[i]);
+    tab.addEventListener('click', switchTab);
 }
 
 // Append 'Mario's' h1 element to header.
