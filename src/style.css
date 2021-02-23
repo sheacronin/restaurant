@@ -58,7 +58,16 @@ nav ul {
     text-shadow: -5px 5px 5px black;
 }
 
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .menu-item {
-    background-color: lightcyan;
-    width: 100px;
+    background-color: #F28F38;
+    height: 230px;
+    border-radius: 30px;
 }

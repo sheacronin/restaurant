@@ -10,7 +10,7 @@ class MenuItem {
 }
 
 function showMenu() {
-    const menu = appendNewElement('div', content);
+    const menu = appendNewElement('div', content, 'menu');
 
     const menuItems = ['spaghetti', 'mushroom risotto', 'peach cobbler',
     'turtle soup', 'calamari'];

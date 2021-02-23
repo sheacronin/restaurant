@@ -52,7 +52,7 @@ for (let i = 0; i < tabs.length; i++) {
 function showHome() {
     //Store copy text in a variable.
     const copyText = "At Mario's, we serve only the best. " +
-    "We're a family-owned Italian restaurant serving you since 1972.";
+    "We're a family-owned Italian restaurant serving you since 1983.";
     // Append div with copy to root div.
     appendNewElement('div', content, undefined, copyText);
 }
