@@ -19,13 +19,13 @@ function loadPage() {
     // Append the header element and store in variable.
     const header = appendNewElement('header', content);
     // Append the hero image to the header.
-    appendNewElement('div', header, 'hero-img');
+    const heroImg = appendNewElement('div', header, 'hero-img');
+    // Append 'Mario's' h1 element to hero img.
+    appendNewElement('h1', heroImg, undefined, "Mario's");
     // Append the nav to the header.
     const nav = appendNewElement('nav', header);
     // Append the ul element for links to the nav.
     const navUl = appendNewElement('ul', nav);
-    // Append 'Mario's' h1 element to header.
-    appendNewElement('h1', header, undefined, "Mario's");
 
     return navUl;
 }

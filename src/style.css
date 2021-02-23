@@ -26,10 +26,19 @@ nav ul {
 
 .hero-img {
     height: 30vh;
-    background-image: url("spag.jpg");
+    background-image: url(spag.jpg), linear-gradient(to top,#5a5a5a 0%,#cccccc 100%);
     background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+}
+
+.hero-img h1 {
+    margin: 0 auto;
+    font-size: 60px;
+    color: white;
 }
 
 .menu-item {
