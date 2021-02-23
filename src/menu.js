@@ -1,4 +1,4 @@
-import {appendNewElement} from './elements';
+import {appendNewElement, content} from './elements';
 
 // Create a class for menu items.
 class MenuItem {
@@ -10,7 +10,7 @@ class MenuItem {
 }
 
 function showMenu() {
-    const menu = appendNewElement('div', document.body);
+    const menu = appendNewElement('div', content);
 
     const menuItems = ['spaghetti', 'mushroom risotto', 'peach cobbler',
     'turtle soup', 'calamari'];

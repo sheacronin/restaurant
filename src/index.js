@@ -3,8 +3,20 @@ import {appendNewElement, content} from './elements';
 import {showMenu} from './menu';
 import {showOurStory} from './our-story';
 
+// Function to clear contents.
+function clearContent() {
+    for (let i = 0; i < content.children.length; i++) {
+        if (i === 0) { // Skip header el.
+            continue;
+        } else {
+            content.removeChild(content.childNodes[i]);
+        }
+    }
+}
+
 // Function to switch tabs.
 function switchTab(e) {
+    clearContent();
     const tab = e.target.textContent;
     switch (tab) {
         case 'Home':
@@ -23,7 +35,7 @@ function switchTab(e) {
 }
 
 // Append the header element and store in variable.
-const header = appendNewElement('header', document.body);
+const header = appendNewElement('header', content);
 
 // Append the hero image to the header.
 appendNewElement('div', header, 'hero-img');
