@@ -2,6 +2,7 @@ import {appendNewElement, content} from './elements';
 // Import show functions from each tab's module.
 import {showMenu} from './menu';
 import {showOurStory} from './our-story';
+import {showContact} from './contact';
 
 // Function to clear contents.
 function clearContent() {
@@ -28,6 +29,7 @@ function switchTab(e) {
             showOurStory();
             break;
         case 'Contact':
+            showContact();
             break;
         default:
             console.log('Something went wrong.');
