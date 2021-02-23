@@ -1,6 +1,8 @@
 body {
     text-align: center;
     margin: 0 auto;
+    font-family: 'Gaegu', cursive;
+    font-size: 26px;
 }
 
 nav {
@@ -9,6 +11,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 26px;
 }
 
 nav ul {
@@ -37,8 +40,10 @@ nav ul {
 
 .hero-img h1 {
     margin: 0 auto;
-    font-size: 60px;
+    font-size: 90px;
     color: white;
+    font-family: 'Dokdo', cursive;
+    text-shadow: -5px 5px 5px black;
 }
 
 .menu-item {
