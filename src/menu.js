@@ -1,5 +1,14 @@
 import {appendNewElement} from './elements';
 
+// Create a class for menu items.
+class MenuItem {
+    constructor(name, price, img) {
+        this.name = name;
+        this.price = price;
+        this.img = img;
+    }
+}
+
 function showMenu() {
     const menu = appendNewElement('div', document.body);
 

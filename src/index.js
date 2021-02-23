@@ -1,18 +1,21 @@
-import {appendNewElement} from './elements';
+import {appendNewElement, content} from './elements';
+// Import show functions from each tab's module.
 import {showMenu} from './menu';
-
-// Store the HTML content div in a variable.
-const content = document.getElementById('content');
+import {showOurStory} from './our-story';
 
 // Function to switch tabs.
 function switchTab(e) {
-    console.log(e.target.textContent);
     const tab = e.target.textContent;
     switch (tab) {
+        case 'Home':
+            break;
         case 'Menu':
             showMenu();
             break; 
-        case 'Home':
+        case 'Our Story':
+            showOurStory();
+            break;
+        case 'Contact':
             break;
         default:
             console.log('Something went wrong.');
@@ -20,7 +23,7 @@ function switchTab(e) {
 }
 
 // Append the header element and store in variable.
-const header = appendNewElement('header', content);
+const header = appendNewElement('header', document.body);
 
 // Append the hero image to the header.
 appendNewElement('div', header, 'hero-img');

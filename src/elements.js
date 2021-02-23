@@ -12,5 +12,10 @@ function appendNewElement(element, parent, cls, txt) {
     return el;
 }
 
+// Store the HTML content div in a variable.
+const content = document.getElementById('content');
+
 // Export the funciton.
 export {appendNewElement};
+// Export the content div.
+export {content};
