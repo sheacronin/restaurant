@@ -3,28 +3,40 @@ body {
     margin: 0 auto;
     font-family: 'Gaegu', cursive;
     font-size: 26px;
+    background-color: #EBEDF1;
 }
 
 nav {
-    background-color: lightcoral;
+    background-color: #732929;
     height: 50px;
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 26px;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
+    height: 100%;
     width: 90%;
     display: flex;
     justify-content: space-around;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: black;
-	letter-spacing: 1px;
+    letter-spacing: 1px;
+    color: #EBEDF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22%;
+}
+
+.nav-link:hover {
+    background-color: #BF382C;
+    cursor: pointer;
+    text-shadow: -1px 1px 5px black;
+    transition: all 0.3s ease-in-out;
 }
 
 .hero-img {
@@ -41,7 +53,7 @@ nav ul {
 .hero-img h1 {
     margin: 0 auto;
     font-size: 90px;
-    color: white;
+    color: #EBEDF1;
     font-family: 'Dokdo', cursive;
     text-shadow: -5px 5px 5px black;
 }
