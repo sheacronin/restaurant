@@ -1,4 +1,4 @@
-import {appendNewElement, content} from './elements';
+import {appendNewElement, loadPage, content} from './elements';
 // Import show functions from each tab's module.
 import {showMenu} from './menu';
 import {showOurStory} from './our-story';
@@ -21,6 +21,7 @@ function switchTab(e) {
     const tab = e.target.textContent;
     switch (tab) {
         case 'Home':
+            showHome();
             break;
         case 'Menu':
             showMenu();
@@ -36,19 +37,10 @@ function switchTab(e) {
     }
 }
 
-// Append the header element and store in variable.
-const header = appendNewElement('header', content);
+// Run loadPage fn and store navUl here.
+const navUl = loadPage();
 
-// Append the hero image to the header.
-appendNewElement('div', header, 'hero-img');
-
-// Append the nav to the header.
-const nav = appendNewElement('nav', header);
-
-// Append the ul element for links to the nav.
-const navUl = appendNewElement('ul', nav);
-
-// Store the link names in an array.
+// Store the tab names in an array.
 const tabs = ['Home', 'Menu', 'Our Story', 'Contact'];
 // Apppend an li for each nav link.
 for (let i = 0; i < tabs.length; i++) {
@@ -56,11 +48,14 @@ for (let i = 0; i < tabs.length; i++) {
     tab.addEventListener('click', switchTab);
 }
 
-// Append 'Mario's' h1 element to header.
-appendNewElement('h1', header, undefined, "Mario's");
+// Function to show homepage contents.
+function showHome() {
+    //Store copy text in a variable.
+    const copyText = "At Mario's, we serve only the best. " +
+    "We're a family-owned Italian restaurant serving you since 1972.";
+    // Append div with copy to root div.
+    appendNewElement('div', content, undefined, copyText);
+}
 
-//Store copy text in a variable.
-const copyText = "At Mario's, we serve only the best. " +
-"We're a family-owned Italian restaurant serving you since 1972.";
-// Append div with copy to root div.
-appendNewElement('div', content, undefined, copyText);
+// Run showHome on page load.
+showHome();
