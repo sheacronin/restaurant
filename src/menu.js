@@ -21,6 +21,8 @@ menuItems.push(new MenuItem('spaghetti', 16, 'spaghetti.jpg'),
 function showMenu() {
     // Add menu div.
     const menu = appendNewElement('div', content, 'menu');
+    // Fade in menu div.
+    menu.classList.add('fade');
 
     // Apend each menu item to menu div.
     for (let i = 0; i < menuItems.length; i++) {

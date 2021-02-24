@@ -58,6 +58,20 @@ nav ul {
     text-shadow: -5px 5px 5px black;
 }
 
+.fade {
+    animation: fade 0.7s ease-in-out;
+}
+
+/* Animation for switching tab. */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -71,6 +85,7 @@ nav ul {
     background-color: #F28F38;
     height: 230px;
     border-radius: 10px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu-item img {
