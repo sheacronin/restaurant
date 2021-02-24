@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"showOurStory\": () => (/* binding */ showOurStory)\n/* harmony export */ });\n/* harmony import */ var _elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements */ \"./src/elements.js\");\n\n\nfunction showOurStory() {\n    const storyText = \"Mario's was founded in 1983.\";\n    (0,_elements__WEBPACK_IMPORTED_MODULE_0__.appendNewElement)('div', _elements__WEBPACK_IMPORTED_MODULE_0__.content, 'fade', storyText);\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/our-story.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"showOurStory\": () => (/* binding */ showOurStory)\n/* harmony export */ });\n/* harmony import */ var _elements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./elements */ \"./src/elements.js\");\n\n\nfunction showOurStory() {\n    const storyText = \"Mario's was founded in 1983.\";\n    const story = (0,_elements__WEBPACK_IMPORTED_MODULE_0__.appendNewElement)('div', _elements__WEBPACK_IMPORTED_MODULE_0__.content, 'fade', storyText);\n    // Append story image.\n    (0,_elements__WEBPACK_IMPORTED_MODULE_0__.appendNewElement)('div', story, 'story-img');\n}\n\n\n\n//# sourceURL=webpack://restaurant/./src/our-story.js?");
 
 /***/ })
 
