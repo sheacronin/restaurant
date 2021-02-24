@@ -13,13 +13,17 @@ function clearContent() {
             content.removeChild(content.childNodes[i]);
         }
     }
+    // Remove active-tab class.
+    navUl.childNodes.forEach(tab => tab.classList.remove('active-tab'));
 }
 
 // Function to switch tabs.
 function switchTab(e) {
     clearContent();
-    const tab = e.target.textContent;
-    switch (tab) {
+    const tab = e.target;
+    // Add active-tab style to selected tab.
+    tab.classList.add('active-tab');
+    switch (tab.textContent) {
         case 'Home':
             showHome();
             break;
@@ -44,7 +48,7 @@ const navUl = loadPage();
 const tabs = ['Home', 'Menu', 'Our Story', 'Contact'];
 // Apppend an li for each nav link.
 for (let i = 0; i < tabs.length; i++) {
-    const tab = appendNewElement('li', navUl, 'nav-link', tabs[i]);
+    const tab = appendNewElement('li', navUl, 'tab', tabs[i]);
     tab.addEventListener('click', switchTab);
 }
 

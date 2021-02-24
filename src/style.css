@@ -23,7 +23,7 @@ nav ul {
     justify-content: space-around;
 }
 
-.nav-link {
+.tab {
     letter-spacing: 1px;
     color: #EBEDF1;
     display: flex;
@@ -32,11 +32,15 @@ nav ul {
     width: 22%;
 }
 
-.nav-link:hover {
+.tab:hover {
     background-color: #BF382C;
     cursor: pointer;
     text-shadow: -1px 1px 5px black;
     transition: all 0.3s ease-in-out;
+}
+
+.active-tab {
+    background: linear-gradient(90deg, #732929, #BF382C 20% 80%, #732929);
 }
 
 .hero-img {
