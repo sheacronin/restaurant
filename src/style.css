@@ -81,3 +81,8 @@ nav ul {
     margin: 10px auto;
     object-fit: cover;
 }
+
+.price {
+    margin: 0 auto;
+    font-size: 20px;
+}
