@@ -101,3 +101,44 @@ nav ul {
     margin: 0 auto;
     font-size: 20px;
 }
+
+form {
+    background-color: #F28F38;
+    height: 350px;
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: 2fr 2fr 5fr 1fr;
+    justify-items: center;
+}
+
+.input-container {
+    text-align: left;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-input {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 50%;
+}
+
+.form-btn {
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+    background-color: #732929;
+    color: #EBEDF1;
+    font-family: 'Gaegu', cursive;
+    font-size: 26px;
+    margin: auto;
+}
