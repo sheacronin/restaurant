@@ -64,7 +64,7 @@ function showHome() {
     // Append div with copy to root div.
     const home = appendNewElement('div', content, 'fade', copyText);
     const img = appendNewElement('img', home, 'home-img');
-    img.setAttribute('src', '../src/table.jpg');
+    img.setAttribute('src', 'i/table.jpg');
 }
 
 // Run showHome on page load.

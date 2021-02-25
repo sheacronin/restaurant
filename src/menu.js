@@ -5,7 +5,7 @@ class MenuItem {
     constructor(name, price, img) {
         this.name = name;
         this.price = price;
-        this.img = '../src/menu-items/' + img;
+        this.img = 'i/menu-items/' + img;
     }
 }
 
