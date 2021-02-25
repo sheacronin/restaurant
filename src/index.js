@@ -50,6 +50,10 @@ const tabs = ['Home', 'Menu', 'Our Story', 'Contact'];
 for (let i = 0; i < tabs.length; i++) {
     const tab = appendNewElement('li', navUl, 'tab', tabs[i]);
     tab.addEventListener('click', switchTab);
+    // Set init Home tab style to active tab.
+    if (i === 0) {
+        tab.classList.add('active-tab');
+    }
 }
 
 // Function to show homepage contents.
