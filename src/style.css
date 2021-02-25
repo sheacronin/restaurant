@@ -76,6 +76,13 @@ nav ul {
     }
 }
 
+.home-img {
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 50px;
+    display: block;
+}
+
 .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -62,7 +62,9 @@ function showHome() {
     const copyText = "At Mario's, we serve only the best. " +
     "We're a family-owned Italian restaurant serving you since 1983.";
     // Append div with copy to root div.
-    appendNewElement('div', content, 'fade', copyText);
+    const home = appendNewElement('div', content, 'fade', copyText);
+    const img = appendNewElement('img', home, 'home-img');
+    img.setAttribute('src', '../src/table.jpg');
 }
 
 // Run showHome on page load.
